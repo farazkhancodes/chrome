@@ -1,8 +1,11 @@
-@-moz-document url(about:blank),url(about:home), url(about:newtab), url(about:privatebrowsing) {
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
     .click-target-container *, .top-sites-list * {
         color: #fff !important ;
         text-shadow: 2px 2px 2px #222 !important ;
     }
+
+    .logo-and-wordmark{display: none !important;}
+    /*disable web search option in settings>home to remove the search bar*/
 
     body::before {
         content: "" ;
@@ -16,4 +19,3 @@
         height: 100vh ;
     }
 }
-
